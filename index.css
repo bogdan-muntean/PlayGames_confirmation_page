@@ -35,6 +35,8 @@
     --letter-spacing-1: 0.24px;
 
     /* Borders and Shadows */
+
+    --border-radius2: 5px;
     --border-radius: 10px;
 
     /* Width */

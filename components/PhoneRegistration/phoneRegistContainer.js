@@ -16,8 +16,12 @@ export default function showPhoneRegistContainer () {
                 <img class="checkmark" src="./assets/checkmark-gray.svg">
             </div>
             <button onclick="validatePhoneNumber()" id="continueBtn">
-                CONTINUE
+                continue
             </button>
+            <div class="check-terms-container">
+                <div class="check-terms-box"></div>
+                <div class="check-terms-text">Please check the box to accept our terms and conditions.</div>
+            </div>
         </div>
     `;
 }
