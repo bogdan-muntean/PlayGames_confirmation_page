@@ -1,0 +1,11 @@
+@media (max-width: 410px) {
+    #phoneNumber {
+        width: 151px;
+    }
+}
+
+@media (max-width: 380px) {
+    #continueBtn {
+        width: 90%;
+    }
+}

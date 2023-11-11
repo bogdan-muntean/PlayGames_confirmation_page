@@ -2,18 +2,18 @@ export default function showPhoneRegistContainer () {
     return `
         <div class="phone-regist-container">
             <div class="legal1">
-                USD 0.25 / Day (5% vat eXTRA). This is autorenewal service.<br>
-                1st day Free
+                USD 0.25 / Day (5% vat eXTRA). This is autorenewal service. 1st day Free
             </div>
             <div class="legal2">
-                Receive an access code by SMS <br>
-                <span>Enter your phone number</span>
+                <p>Receive an access code by SMS</p> 
+                <p><span>Enter your phone number</span></p>
             </div>
             <div class="rectangle-phone-input">
                 <div class="rectangle-phone-input-left-content">
-                    <img src="./assets/phone.svg">
+                    <img class="phone-image" src="./assets/phone.svg" alt="Image with a phone">
                     <input type="text" id="phoneNumber" value="+40">
                 </div>
+                <img class="checkmark" src="./assets/checkmark-gray.svg">
             </div>
             <button onclick="validatePhoneNumber()" id="continueBtn">
                 CONTINUE

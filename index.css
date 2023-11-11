@@ -2,17 +2,37 @@
     /* Colors */
     --background-color: #000000;
     --text-color: #FFFFFF;
+    --text-color-secondary: #000;
 
     /* Fonts */
-    --font-family: 'Roboto';
-    --font-size: 20px;
-    --font-size--small: 12px;
+    --font-family: 'Roboto', Arial, sans-serif;
+
+    --font-size-5: 34px;
+    --font-size-4: 24px;
+    --font-size-3: 20px;
+    --font-size-2: 14px;
+    --font-size-1: 12px;
+
+
+    --font-weight-9: 900;
+    --font-weight-7: 700;
+    --font-weight-6: 600;
+    --font-weight-4: 400;
+    --font-weight-3: 300;
 
     /* Background */
     --background-btn1: linear-gradient(180deg, #713BE9 0%, #9D7CF0 100%);
     --background-btn2: linear-gradient(180deg, #019EE3 0%, #7242E8 100%);
 
+    /* Line height */
+
+    --line-height-3: 94.118%;
+    --line-height-2: 15px;
+    --line-height-1: 11px;
+
     /* Spacing */
+    --letter-spacing-2: 0.68px;
+    --letter-spacing-1: 0.24px;
 
     /* Borders and Shadows */
     --border-radius: 10px;
@@ -20,8 +40,11 @@
     /* Width */
 }
 
-body {
+html {
     font-family: var(--font-family);
+}
+
+body {
     color: var(--text-color);
     margin: 0;
     padding: 0;
@@ -29,12 +52,6 @@ body {
     background-color: var(--background-color);
 }
 
-h1 {
-    color: var(--text-color);
-    font-size: 34px;
-    font-weight: 900;
-    line-height: 32px;
-    text-align: center;
-}
+
 
 
