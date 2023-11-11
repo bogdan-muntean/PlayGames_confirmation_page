@@ -9,9 +9,7 @@
     /* Fonts */
     --font-family: 'Roboto';
     --font-size: 20px;
-    --font-size-h1: 34px;
-    --font-weight-h1: 900;
-    --line-height-h1: 32px;
+    --font-size--small: 12px;
 
 
     /* Spacing */
@@ -71,4 +69,36 @@ button {
 
 button:hover {
     background-color: var(--secondary-color);
+}
+
+.phone-regist-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.legal1 {
+    font-size: var(--font-size--small);
+    font-weight: 400;
+    text-align: center;
+}
+
+.legal2{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.legal2 > span {
+    font-size: 12px;
+    font-weight: 400;
+
+}
+
+.rectangle {
+    height: 55px;
+    background-color: white;
+    border-radius: 10px; 
+    flex-shrink: 0; 
 }

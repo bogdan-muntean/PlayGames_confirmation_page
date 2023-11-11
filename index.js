@@ -1,3 +1,9 @@
-import { displayContainer } from "./utils/displayComponent";
+import showPhoneRegistContainer from "./components/phoneRegistration/phoneRegistContainer.js";
 
-let containerToAddComponents = document.querySelector(`.principal-container`);
+let containerPrincipal = document.querySelector(`.principal-container`);
+
+loadContent(showPhoneRegistContainer);
+
+function loadContent(callback) {
+    containerPrincipal.innerHTML = callback();
+}
