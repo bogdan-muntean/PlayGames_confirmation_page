@@ -1,0 +1,29 @@
+header {
+    margin: 0 auto;
+    margin-top: 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 200px;
+    height: 45.333px; 
+    flex-shrink: 0;
+}
+
+.header-text {
+    width: 94%; 
+}
+
+.arrows-container {
+    width: 120px;
+    height: 147px;
+    flex-shrink: 0;
+    margin: 15px;
+}
+
+.arrows {
+    width: 100%;
+}
