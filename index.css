@@ -3,6 +3,8 @@
   --background-color: #000000;
   --text-color: #ffffff;
   --text-color-secondary: #000;
+  --text-color-warning-2: #F00;
+  --text-color-warning-1: #DE1212;
 
   /* Fonts */
   --font-family: "Roboto", Arial, sans-serif;
@@ -74,6 +76,3 @@ body {
   margin: 0 10px;
 }
 
-.warning-text-input {
-  color: red;
-}

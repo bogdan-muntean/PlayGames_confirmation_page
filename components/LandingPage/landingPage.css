@@ -75,9 +75,17 @@
 }
 
 .checkmark {
-  width: 32.681px;
+  width: 34.681px;
   height: 33.88px;
   flex-shrink: 0;
+  background-image: url("../../assets/checkmark-gray.svg");
+}
+.checkmark.warning {
+  background-image: url("../../assets/checkmark-red.svg");
+}
+
+.checkmark.correct {
+  background-image: url("../../assets/checkmark-green.svg");
 }
 
 #continueBtn {
@@ -168,12 +176,19 @@
 }
 
 p.warning {
-  color: red;
+  color: var(--text-color-warning-2);
 }
 .check-terms-checkbox.warning {
-  border: 2px solid #f00;
+  border: 2px solid var(--text-color-warning-2);
 }
 
 #warning-text-input {
-  color: red;
+  width: 71%;
+  color: var(--text-color-warning-1);
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

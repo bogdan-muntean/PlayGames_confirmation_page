@@ -13,7 +13,7 @@ export default function LandingPage() {
                     <img class="phone-image" src="./assets/phone.svg" alt="Image with a phone">
                     <input type="text" id="phoneNumber" value="+40">
                 </div>
-                <img class="checkmark" src="./assets/checkmark-gray.svg">
+                <div class="checkmark"></div>
             </div>
             <div id="warning-text-input"></div>
             <button id="continueBtn">
