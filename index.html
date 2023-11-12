@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PlayGames Confirmation Page</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="./components/PhoneRegistration/phoneRegist.css">
-    <link rel="stylesheet" href="./components/Congratulation/congratulation.css">
-    <link rel="stylesheet" href="./components/PromoteText/promoteText.css">
-    <link rel="stylesheet" href="media.css">
-</head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="./components/PhoneRegistration/phoneRegist.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./components/Congratulation/congratulation.css"
+    />
+    <link rel="stylesheet" href="./components/PromoteText/promoteText.css" />
+    <link rel="stylesheet" href="media.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo" src="./assets/logo.png" alt="Logo">
-        <div class="header-text">Play Over 1500 Premium Games</div>
-        <div class="arrows-container">
-            <img class="arrows" src="./assets/arrows.svg" alt="Image with moving arrows">
-        </div>
+      <img class="logo" src="./assets/logo.png" alt="Logo" />
+      <div class="header-text">Play Over 1500 Premium Games</div>
+      <div class="arrows-container">
+        <img
+          class="arrows"
+          src="./assets/arrows.svg"
+          alt="Image with moving arrows"
+        />
+      </div>
     </header>
-    <div class="principal-container default">
-    </div>
+    <div class="principal-container default"></div>
 
     <script type="module" src="index.js"></script>
-</body>
-
+    <script>
+      function toggleImageVisibility() {
+        let checkbox = document.querySelector("#customCheckbox");
+        let image = document.querySelector("#checkImage");
+        image.style.display = checkbox.checked ? "block" : "none";
+      }
+    </script>
+  </body>
 </html>

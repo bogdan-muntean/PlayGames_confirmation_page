@@ -1,4 +1,4 @@
-.phone-regist-container {
+.landing-page {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -104,28 +104,85 @@
   width: 81%;
   height: 30px;
   margin: 0 auto;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
 }
 
-.check-terms-box {
-  width: 25px;
-  height: 25px;
-  flex-shrink: 0;
-  border-radius: var(--border-radius2);
-  border: 2px solid #fff;
-}
-
-.check-terms-text {
+.check-terms-label {
+  width: 100%;
+  font-size: 12px;
   color: #fff;
   text-align: center;
-  font-family: SF Pro Display;
-  font-size: 12px;
+  font-family: "SF Pro Display";
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.check-terms-label input {
+  display: none;
+}
+
+.check-terms-checkbox {
+  position: relative;
+  height: 25px;
+  width: 25px;
+  background-color: #000000;
+  border: 2px solid var(--text-color);
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+#checkImage {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 11px;
+  flex-shrink: 0;
+  fill: #fff;
+  transform: translate(-50%, -50%);
+}
+
+#customCheckbox:checked + .check-terms-container #checkImage {
+  display: block;
+}
+
+.legal3 {
+  width: 87%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 15px; /* 125% */
+  letter-spacing: 0.24px;
+}
+
+.footer {
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-option {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 11px; /* 91.667% */
+  letter-spacing: 0.24px;
+  text-decoration-line: underline;
+}
+
+.footer div:not(:last-child)::after {
+  content: "|";
+  margin: 0 10px;
 }
