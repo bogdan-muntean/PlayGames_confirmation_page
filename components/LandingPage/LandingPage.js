@@ -1,6 +1,6 @@
 export default function LandingPage() {
   return `
-        <div class="landing-page">
+        <div class="landing-page" id="principal-container">
             <div class="legal1">
                 USD 0.25 / Day (5% vat eXTRA). This is autorenewal service. 1st day Free
             </div>
@@ -38,4 +38,5 @@ export default function LandingPage() {
             </nav>
         </div>
     `;
-};
+}
+

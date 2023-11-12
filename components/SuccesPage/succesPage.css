@@ -1,0 +1,22 @@
+.legal4{
+    width: 92%;
+    color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.legal4 > p {
+    margin: 0; 
+}
+
+.legal4 > p > span {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

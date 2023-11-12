@@ -1,0 +1,35 @@
+.confirmation-page {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rectangle-code-input {
+  height: 55px;
+  width: 51%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: var(--background-color-input);
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#codeNumber {
+  width: 47px;
+  margin: 0 auto;
+  font-style: normal;
+  line-height: normal;
+  border: none;
+  outline: none;
+  color: var(--text-color-2);
+  font-family: Roboto;
+  font-size: var(--font-size-3);
+  font-weight: 600;
+}
+
+.confirmation-btn{
+    background: var(--background-btn2) !important;
+}
