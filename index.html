@@ -6,14 +6,8 @@
     <title>PlayGames Confirmation Page</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="header.css" />
-    <link
-      rel="stylesheet"
-      href="./components/PhoneRegistration/phoneRegist.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./components/Congratulation/congratulation.css"
-    />
+    <link rel="stylesheet" href="./components/LandingPage/landingPage.css" />
+    <link rel="stylesheet" href="./components/SuccesPage/succesPage.css" />
     <link rel="stylesheet" href="./components/PromoteText/promoteText.css" />
     <link rel="stylesheet" href="media.css" />
   </head>
@@ -32,13 +26,7 @@
     </header>
     <div class="principal-container default"></div>
 
+    <script type="module" src="./components/LandingPage/LandingPage.js"></script>
     <script type="module" src="index.js"></script>
-    <script>
-      function toggleImageVisibility() {
-        let checkbox = document.querySelector("#customCheckbox");
-        let image = document.querySelector("#checkImage");
-        image.style.display = checkbox.checked ? "block" : "none";
-      }
-    </script>
   </body>
 </html>

@@ -1,59 +1,79 @@
 :root {
-    /* Colors */
-    --background-color: #000000;
-    --text-color: #FFFFFF;
-    --text-color-secondary: #000;
+  /* Colors */
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --text-color-secondary: #000;
 
-    /* Fonts */
-    --font-family: 'Roboto', Arial, sans-serif;
+  /* Fonts */
+  --font-family: "Roboto", Arial, sans-serif;
 
-    --font-size-5: 34px;
-    --font-size-4: 24px;
-    --font-size-3: 20px;
-    --font-size-2: 14px;
-    --font-size-1: 12px;
+  --font-size-5: 34px;
+  --font-size-4: 24px;
+  --font-size-3: 20px;
+  --font-size-2: 14px;
+  --font-size-1: 12px;
 
+  --font-weight-9: 900;
+  --font-weight-7: 700;
+  --font-weight-6: 600;
+  --font-weight-4: 400;
+  --font-weight-3: 300;
 
-    --font-weight-9: 900;
-    --font-weight-7: 700;
-    --font-weight-6: 600;
-    --font-weight-4: 400;
-    --font-weight-3: 300;
+  /* Background */
+  --background-btn1: linear-gradient(180deg, #713be9 0%, #9d7cf0 100%);
+  --background-btn2: linear-gradient(180deg, #019ee3 0%, #7242e8 100%);
 
-    /* Background */
-    --background-btn1: linear-gradient(180deg, #713BE9 0%, #9D7CF0 100%);
-    --background-btn2: linear-gradient(180deg, #019EE3 0%, #7242E8 100%);
+  /* Line height */
 
-    /* Line height */
+  --line-height-3: 94.118%;
+  --line-height-2: 15px;
+  --line-height-1: 11px;
 
-    --line-height-3: 94.118%;
-    --line-height-2: 15px;
-    --line-height-1: 11px;
+  /* Spacing */
+  --letter-spacing-2: 0.68px;
+  --letter-spacing-1: 0.24px;
 
-    /* Spacing */
-    --letter-spacing-2: 0.68px;
-    --letter-spacing-1: 0.24px;
+  /* Borders and Shadows */
 
-    /* Borders and Shadows */
+  --border-radius2: 5px;
+  --border-radius: 10px;
 
-    --border-radius2: 5px;
-    --border-radius: 10px;
-
-    /* Width */
+  /* Width */
 }
 
 html {
-    font-family: var(--font-family);
+  font-family: var(--font-family);
 }
 
 body {
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: var(--background-color);
 }
 
+.footer {
+  margin: 0 auto;
+  display: flex;
+}
 
+.footer-option {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 11px; /* 91.667% */
+  letter-spacing: 0.24px;
+  text-decoration-line: underline;
+}
 
+.footer div:not(:last-child)::after {
+  content: "|";
+  margin: 0 10px;
+}
 
+.warning-text-input {
+  color: red;
+}

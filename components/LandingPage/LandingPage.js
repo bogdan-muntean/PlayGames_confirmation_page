@@ -1,5 +1,5 @@
-export default function landingPage () {
-    return `
+export default function LandingPage() {
+  return `
         <div class="landing-page">
             <div class="legal1">
                 USD 0.25 / Day (5% vat eXTRA). This is autorenewal service. 1st day Free
@@ -15,16 +15,17 @@ export default function landingPage () {
                 </div>
                 <img class="checkmark" src="./assets/checkmark-gray.svg">
             </div>
-            <button onclick="validatePhoneNumber()" id="continueBtn">
+            <div id="warning-text-input"></div>
+            <button id="continueBtn">
                 continue
             </button>
             <div class="check-terms-container">
                 <label class="check-terms-label" for="customCheckbox">
-                    <input type="checkbox" id="customCheckbox" onclick="toggleImageVisibility()">
+                    <input type="checkbox" id="customCheckbox">
                     <span class="check-terms-checkbox">
                         <img id="checkImage" src="./assets/check.svg">
                     </span>
-                    <p>Please check the box to accept our terms and conditions.</p>
+                    <p class="check-terms-par">Please check the box to accept our terms and conditions.</p>
                 </label>                
             </div>
             <div class="legal3">
@@ -37,19 +38,4 @@ export default function landingPage () {
             </nav>
         </div>
     `;
-}
-
-function validatePhoneNumber() {
-    // Get the phone number value
-    let phoneNumber = document.querySelector("#phoneNumber").value;
-
-    // Define a regular expression pattern for the phone number
-    let pattern = /^\+40\d{9}$/;
-    // Check if the phone number matches the pattern
-    if (pattern.test(phoneNumber)) {
-        document.getElementById("validationResult").innerText = "Phone number is valid.";
-    } else {
-        document.getElementById("validationResult").innerText = "Invalid phone number format. It should be in the pattern +40xxxxxxxxx.";
-    }
-}
-
+};
