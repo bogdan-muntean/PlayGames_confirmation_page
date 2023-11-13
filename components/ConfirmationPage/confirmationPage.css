@@ -1,7 +1,7 @@
 .confirmation-page {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--gap-1);
 }
 .rectangle-code-input {
   height: 55px;
@@ -9,7 +9,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   background-color: var(--background-color-input);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius-1);
   flex-shrink: 0;
   display: flex;
   flex-direction: row;
@@ -18,16 +18,15 @@
 }
 
 #codeNumber {
-  width: 47px;
+  width: 55px;
+  font-size: var(--font-size-3);
+  font-weight: var(--font-weight-6);
+  color: var(--text-color-2);
   margin: 0 auto;
   font-style: normal;
   line-height: normal;
   border: none;
   outline: none;
-  color: var(--text-color-2);
-  font-family: Roboto;
-  font-size: var(--font-size-3);
-  font-weight: 600;
 }
 
 .confirmation-btn{

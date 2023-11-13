@@ -1,22 +1,19 @@
-.legal4{
-    width: 92%;
-    color: #fff;
+.legal4 {
+  width: 92%;
+  color: var(--text-color);
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-7);
   text-align: center;
-  font-family: Roboto;
-  font-size: 22px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
 }
 .legal4 > p {
-    margin: 0; 
+  margin: 0;
 }
 
 .legal4 > p > span {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 22px;
+  font-size: var(--font-size-6);
+  font-weight: var(--font-weight-4);
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }

@@ -6,61 +6,89 @@
   --text-color-secondary: #000;
   --text-color-2: #BABABA;
 
-  --text-color-warning-2: #F00;
   --text-color-warning-1: #DE1212;
+  --text-color-warning-2: #F00;
 
   /* Fonts */
   --font-family: "Roboto", Arial, sans-serif;
 
-  --font-size-5: 34px;
-  --font-size-4: 24px;
-  --font-size-3: 20px;
-  --font-size-2: 14px;
   --font-size-1: 12px;
+  --font-size-2: 14px;
+  --font-size-3: 20px;
+  --font-size-4: 24px;
+  --font-size-5: 34px;
+  --font-size-6: 22px;
 
-  --font-weight-9: 900;
-  --font-weight-7: 700;
-  --font-weight-6: 600;
-  --font-weight-4: 400;
   --font-weight-3: 300;
+  --font-weight-4: 400;
+  --font-weight-6: 600;
+  --font-weight-7: 700;
+  --font-weight-9: 900;
 
   /* Background */
   --background-btn1: linear-gradient(180deg, #713be9 0%, #9d7cf0 100%);
   --background-btn2: linear-gradient(180deg, #019ee3 0%, #7242e8 100%);
 
   /* Line height */
-
-  --line-height-3: 94.118%;
-  --line-height-2: 15px;
   --line-height-1: 11px;
+  --line-height-2: 15px;
+  --line-height-3: 94.118%;
+  --line-height-4: 91.667%;
+  --line-height-5: 125%;
 
   /* Spacing */
   --letter-spacing-2: 0.68px;
   --letter-spacing-1: 0.24px;
 
   /* Borders and Shadows */
+  --border-radius-1: 10px;
+  --border-radius-2: 5px;
 
-  --border-radius2: 5px;
-  --border-radius: 10px;
+  /* Gap */
+  --gap-1: 10px;
+  --gap-2: 5px;
+  --gap-3: 6px;
 
   /* Width */
+  --width-footer-1: 300px;
+
+  /* Height */
+  --height-footer-1: 20px;
 }
 
-html {
+html, body {
   font-family: var(--font-family);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   color: var(--text-color);
   margin: 0;
-  margin-bottom: 15px;
   padding: 0;
   min-height: 100vh;
   background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+}
+#parent-container{
+  height: 100%;
+  width: 100%;
+}
+#principal-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .footer {
-  width: 68%;
+  height: var(--height-footer-1);
+  width: var(--width-footer-1);
+  left: calc(50% - var(--width-footer-1) / 2);
+  bottom: 15px;
+  position: absolute;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -69,13 +97,13 @@ body {
 }
 
 .footer-option {
-  color: #fff;
+  color: var(--text-color);
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-3);
+  line-height: var(--line-height-4); 
+  letter-spacing: var(--letter-spacing-1);
   text-align: center;
-  font-size: 12px;
   font-style: normal;
-  font-weight: 300;
-  line-height: 11px; /* 91.667% */
-  letter-spacing: 0.24px;
   text-decoration-line: underline;
 }
 
